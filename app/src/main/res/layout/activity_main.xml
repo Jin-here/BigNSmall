@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="left|bottom"
-        android:background="@android:color/darker_gray">
+        android:background="@android:color/holo_orange_light">
 
     </FrameLayout>
 
@@ -20,5 +20,5 @@
         android:layout_width="150dp"
         android:layout_height="200dp"
         android:layout_gravity="left|bottom"
-        android:background="@android:color/holo_green_light"></FrameLayout>
+        android:background="@android:color/holo_purple"></FrameLayout>
 </FrameLayout>
