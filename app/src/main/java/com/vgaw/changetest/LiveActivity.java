@@ -13,7 +13,7 @@ import com.vgaw.changetest.fragment.MapFragment;
 import com.vgaw.changetest.fragment.ThumbnailBaseFragment;
 
 /**
- * you can change between two fragment without going through life cycle
+ * Advantage:you can change between two fragment without going through life cycle
  */
 public class LiveActivity extends AppCompatActivity {
     private ViewGroup v_parent;
@@ -51,6 +51,8 @@ public class LiveActivity extends AppCompatActivity {
         public void onClick(View v) {
             if (v.getId() == viewGroups[1 - currentIndex].getId()){
                 if (!fragments[1 - currentIndex].askedForBig()){
+                    // 位置1
+                    fragments[currentIndex].preparedForSmall();
                     animateBig();
                 }
             }
@@ -80,7 +82,8 @@ public class LiveActivity extends AppCompatActivity {
     }
 
     private void toBeSmall(){
-        fragments[currentIndex].preparedForSmall();
+        // 位置2
+        //fragments[currentIndex].preparedForSmall();
         updateParams(viewGroups[currentIndex], 300, 400);
     }
 
